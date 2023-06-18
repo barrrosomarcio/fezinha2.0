@@ -1,0 +1,20 @@
+{
+  "name": "fezinha2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./server.js",
+    "start-db": "docker-compose rm -fsv db && docker-compose up -d db",
+    "start-docker": "docker-compose rm -fsv app && docker-compose up -d app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
